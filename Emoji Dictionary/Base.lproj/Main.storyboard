@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="183.19999999999999" y="117.39130434782609"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controller-->
         <scene sceneID="X1B-pK-q9Z">
             <objects>
-                <viewController id="cTS-MJ-NrJ" sceneMemberID="viewController">
+                <viewController id="cTS-MJ-NrJ" customClass="DefinitionViewController" customModule="Emoji_Dictionary" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k1H-yo-Q3m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
