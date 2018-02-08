@@ -33,10 +33,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="YkI-g6-Mae" id="f9e-Kv-3e0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="118"/>
+            <point key="canvasLocation" x="-156" y="118"/>
         </scene>
     </scenes>
 </document>
