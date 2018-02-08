@@ -10,6 +10,8 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
 
+    @IBOutlet weak var definitionLabel: UILabel!
+    @IBOutlet weak var emojiLabel: UILabel!
     var emoji = "NO EMOJI"
     
     override func viewDidLoad() {
@@ -17,7 +19,32 @@ class DefinitionViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        print(emoji)
+        emojiLabel.text = emoji
+        
+        if emoji == "🐹" {
+        definitionLabel.text = "A cute Hamster!"
+        }
+        if emoji == "🦋" {
+            definitionLabel.text = "A beautiful butterfly!"
+        }
+        if emoji == "👽" {
+            definitionLabel.text = "A freaky alien!"
+        }
+        if emoji == "💒" {
+            definitionLabel.text = "A wedding chapel!"
+        }
+        if emoji == "😎" {
+            definitionLabel.text = "A cool Smiley!"
+        }
+        if emoji == "🤠" {
+            definitionLabel.text = "A cowboy Smiley!"
+        }
+        if emoji == "😆" {
+            definitionLabel.text = "A Smiley with tightly crossed eyes!"
+        }
+        if emoji == "🐬" {
+            definitionLabel.text = "A friendly Dolphin!"
+        }
     }
 
     override func didReceiveMemoryWarning() {
