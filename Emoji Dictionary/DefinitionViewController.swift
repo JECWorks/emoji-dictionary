@@ -14,55 +14,17 @@ class DefinitionViewController: UIViewController {
     @IBOutlet weak var createdLabel: UILabel!
     @IBOutlet weak var definitionLabel: UILabel!
     @IBOutlet weak var emojiLabel: UILabel!
-    var emoji = "NO EMOJI"
+    var emoji = Emoji()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        emojiLabel.text = emoji
-        
-        if emoji == "🐹" {
-        definitionLabel.text = "A cute Hamster!"
-            categoryLabel.text = "Category: Animals/Nature"
-            createdLabel.text = "Created: 2011"
-        }
-        if emoji == "🦋" {
-            definitionLabel.text = "A beautiful butterfly!"
-            categoryLabel.text = "Category: Animals/Nature"
-            createdLabel.text = "Created: 2010"
-        }
-        if emoji == "👽" {
-            definitionLabel.text = "A freaky alien!"
-            categoryLabel.text = "Category: Smileys/People"
-            createdLabel.text = "Created: 2012"
-        }
-        if emoji == "💒" {
-            definitionLabel.text = "A wedding chapel!"
-            categoryLabel.text = "Category: Travel/Places"
-            createdLabel.text = "Created: 2011"
-        }
-        if emoji == "😎" {
-            definitionLabel.text = "A cool Smiley!"
-            categoryLabel.text = "Category: Smileys/People"
-            createdLabel.text = "Created: 2008"
-        }
-        if emoji == "🤠" {
-            definitionLabel.text = "A cowboy Smiley!"
-            categoryLabel.text = "Category: Smileys/People"
-            createdLabel.text = "Created: 2009"
-        }
-        if emoji == "😆" {
-            definitionLabel.text = "A Smiley with tightly crossed eyes!"
-            categoryLabel.text = "Category: Smileys/People"
-            createdLabel.text = "Created: 2009"
-        }
-        if emoji == "🐬" {
-            definitionLabel.text = "A friendly Dolphin!"
-            categoryLabel.text = "Category: Animals/Nature"
-            createdLabel.text = "Created: 2011"
-        }
+        emojiLabel.text = emoji.stringEmoji
+        createdLabel.text = "Created in \(emoji.created)"
+        categoryLabel.text = "Category: \(emoji.category)"
+        definitionLabel.text = emoji.definition
     }
 
     override func didReceiveMemoryWarning() {
