@@ -63,17 +63,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsM-je-rMu">
+                                <rect key="frame" x="152" y="424" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCi-9A-WGO">
+                                <rect key="frame" x="157" y="465" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="UsM-je-rMu" firstAttribute="top" secondItem="tG5-xL-dOm" secondAttribute="bottom" constant="20" id="4Et-OJ-Irg"/>
                             <constraint firstItem="tG5-xL-dOm" firstAttribute="top" secondItem="sbW-5U-dgM" secondAttribute="bottom" constant="40" id="Ame-MK-VWg"/>
                             <constraint firstItem="sbW-5U-dgM" firstAttribute="top" secondItem="XTK-39-k6H" secondAttribute="top" constant="40" id="LDm-Zs-Dbi"/>
                             <constraint firstItem="tG5-xL-dOm" firstAttribute="centerX" secondItem="k1H-yo-Q3m" secondAttribute="centerX" id="Q0v-cP-Pri"/>
                             <constraint firstItem="sbW-5U-dgM" firstAttribute="centerX" secondItem="k1H-yo-Q3m" secondAttribute="centerX" id="ZFP-Kr-r16"/>
+                            <constraint firstItem="kCi-9A-WGO" firstAttribute="top" secondItem="UsM-je-rMu" secondAttribute="bottom" constant="20" id="bGg-fb-dNf"/>
+                            <constraint firstItem="UsM-je-rMu" firstAttribute="centerX" secondItem="k1H-yo-Q3m" secondAttribute="centerX" id="cLJ-cT-GYn"/>
+                            <constraint firstItem="kCi-9A-WGO" firstAttribute="centerX" secondItem="k1H-yo-Q3m" secondAttribute="centerX" id="gFm-k1-6EA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XTK-39-k6H"/>
                     </view>
                     <connections>
+                        <outlet property="categoryLabel" destination="UsM-je-rMu" id="ay2-mo-GBa"/>
+                        <outlet property="createdLabel" destination="kCi-9A-WGO" id="1Uj-hi-9kK"/>
                         <outlet property="definitionLabel" destination="tG5-xL-dOm" id="1gm-kz-Kgi"/>
                         <outlet property="emojiLabel" destination="sbW-5U-dgM" id="bzA-xk-MsA"/>
                     </connections>
